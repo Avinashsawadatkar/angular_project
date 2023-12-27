@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApplication';
+  //propertyName : dataType = value;
+  a = 20;
+  b: number = 90;
+  c!: number;
+ 
+
 }
