@@ -16,12 +16,18 @@
 
 <button (click)="submit()">Submit</button>
   <div>{{fruit}}</div>
-
-
+<br>
+Enter your player name: <input type="text" [(ngModel)]="favPlayer">
+<br>
+{{favPlayer}}
+<br>
+Enter your name : <input type="text"[(ngModel)]="yourName">
+<br>
+{{yourName}}
+  <app-home></app-home>
 
 
 
 
 
  
-<app-home></app-home>

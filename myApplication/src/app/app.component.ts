@@ -18,10 +18,11 @@ export class AppComponent {
   //2.property binding >>[]>> [attribute]="proprtyName"
   //3. event binding>>()>>on event will bind data to the property
   //Two way data bind >> [()]>> [(ngModel)]="propertyName"
-  myName = "Poonam";
+  myName = "Avinash";
   isDisable = false;
   fruit!:string;
-
+  favPlayer = "Virat kohli";
+  yourName = "";
   constructor() { }
 
   submit() {
