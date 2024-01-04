@@ -23,26 +23,27 @@ export class AppComponent {
   fruit!:string;
   favPlayer = "Virat kohli";
   yourName = "";
+  favColor="";
   getMyInput(myInput: any){
     console.log(myInput.value);
     
   }
 
-  showName = false; //*ngIf Directive
+  // showName = false; //*ngIf Directive
 
   //*ngSwitch directive
-  setProgramingLanguage(event: any){
-    this.selectProgramingLanguage = event.target.value;
-  }
-  selectProgramingLanguage="";
+  // setProgramingLanguage(event: any){
+  //   this.selectProgramingLanguage = event.target.value;
+  // }
+  // selectProgramingLanguage="";
 
   // *ngFor directive
-  products = [
-    {name :'Laptop', id : 'prod01',price : 32000},
-    {name : 'TV', id : 'prod02', price : 23000},
-    {name : 'Mobile', id : 'prod03', price : 8000},
-    {name : 'FAN', id : 'prod04', price : 2000}
-  ];
+  // products = [
+  //   {name :'Laptop', id : 'prod01',price : 32000},
+  //   {name : 'TV', id : 'prod02', price : 23000},
+  //   {name : 'Mobile', id : 'prod03', price : 8000},
+  //   {name : 'FAN', id : 'prod04', price : 2000}
+  // ];
   
 
   //*ngClass Dirctive
@@ -53,4 +54,5 @@ export class AppComponent {
   submit() {
     this.fruit = "Mango";
   }
+  
 }

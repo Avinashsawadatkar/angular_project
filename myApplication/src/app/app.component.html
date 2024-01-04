@@ -27,20 +27,23 @@ Enter your name : <input type="text"[(ngModel)]="yourName">
 <br>
 {{yourName}}
 <br>
+Enter your favColor: <input type="text" [(ngModel)]="favColor">
+<br>
+{{favColor}}
 <hr>
-<h2>Tempalate Reference varible</h2>
+<!-- <h2>Tempalate Reference varible</h2>
 <input type="text" #myInput>
 <br><br>
 <button (click)="getMyInput(myInput)">Click me</button>
 <br>
 <hr>
 <h2>Directive in Angular</h2>
-<h2>*ngIf directive</h2>
+<h2>*ngIf directive</h2> -->
 
 
-<div *ngIf="showName;then thenBlock; else elseBlock">
+<!-- <div *ngIf="showName;then thenBlock; else elseBlock"> -->
  
-</div>
+<!-- </div>
 
 <ng-template #thenBlock>
   <h2>
@@ -87,15 +90,15 @@ Enter your name : <input type="text"[(ngModel)]="yourName">
     <th>Product Price</th>
   </thead>
   <tbody>
-    <tr *ngFor="let myProduct of products; even as i"> 
+    <tr *ngFor="let myProduct of products; even as i">  -->
       
         <!-- first,last,even,odd, -->
 
-      <td>{{i}}</td>
+      <!-- <td>{{i}}</td>
       <td>{{myProduct.name}}</td>
       <td>{{myProduct.id}}</td>
       <td>{{myProduct.price}}</td>
-    </tr>
+    </tr> -->
     <!-- <tr>
       <td>TV</td>
       <td>2</td>
@@ -111,20 +114,18 @@ Enter your name : <input type="text"[(ngModel)]="yourName">
       <td>4</td>
       <td>2000</td>
     </tr> -->
-  </tbody>
+  <!-- </tbody>
 </table>
 <hr>
 <h2>*ngClass Directive</h2>
+<br> -->
 
 
 
 
 
 
-
-
-
-  <app-home></app-home>
+ <router-outlet></router-outlet>
 
 
 
