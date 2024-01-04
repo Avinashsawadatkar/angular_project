@@ -1,0 +1,36 @@
+
+<h2>WELCOME TO DATABINDING</h2>    
+<br>
+<div>Hello world!!</div>
+<p>{{title}}</p>
+<p>{{a}}</p>
+<div >{{city}}</div>
+
+{{city}}
+<br>
+<input type="text" value="patil" >
+<br>
+<input type="text" [value]="myName">
+<br>
+<input type="text" value="{{myName}}"><br>
+
+<input type="text" [disabled]="isDisable"><br>
+<input type="text" disabled="{{isDisable}}"><br>
+
+<button (click)="submit()">Submit</button>
+  <div>{{fruit}}</div>
+<br>
+<hr>
+<h2>Two way databinding</h2>
+Enter your player name: <input type="text" [(ngModel)]="favPlayer">
+<br>
+{{favPlayer}}
+<br>
+Enter your name : <input type="text"[(ngModel)]="yourName">
+<br>
+{{yourName}}
+<br>
+Enter your favColor: <input type="text" [(ngModel)]="favColor">
+<br>
+{{favColor}}
+<hr>
