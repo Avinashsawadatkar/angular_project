@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { TestComponent } from './test/test.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 
 
@@ -17,6 +18,7 @@ import { TestComponent } from './test/test.component';
     HomeComponent,
     DatabindingComponent,
     TestComponent,
+    DirectiveComponent,
     
     
   ],
