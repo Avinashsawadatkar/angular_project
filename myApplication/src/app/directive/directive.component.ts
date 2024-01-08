@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./directive.component.css']
 })
 export class DirectiveComponent {
+  showDiv : boolean = true;
+  toggle(){
+  // this.showDiv =false;
 
+  this.showDiv = ! this.showDiv
+}
+
+show : boolean = true;
+effect(){
+  // this.show = false;
+
+  this.show = !this.show;
+}
 }

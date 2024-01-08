@@ -31,4 +31,12 @@ HTML element using the expression.
  You can also use ngStyle directive to dynamically change the style of your HTML element.</p>
 
 
-<div class="div-container"></div>
+<div class="div-container" *ngIf="showDiv"></div>
+<br>
+<button (click)="toggle()">Toggle Effect</button>
+<br>
+<br>
+
+<div class="container" *ngIf="show"></div>
+<br>
+<button (click)="effect()">Toggle</button>
