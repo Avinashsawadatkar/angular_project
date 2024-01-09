@@ -109,5 +109,29 @@ HTML element using the expression.
 </ul>
 
 <h2>*switch directive</h2>
+<div [ngSwitch]="color">
+     <p *ngSwitchCase="'pink'" style="color: pink;" >I like a {{color}}</p>
+     <p *ngSwitchCase="'green'" style="color: green;">I like a {{color}}</p>
+     <p *ngSwitchCase="'yellow'" style="color: yellow;">I like a {{color}}</p>
+     <p *ngSwitchCase="'skyblue'" style="color: skyblue;">I like a {{color}}</p>
+     <p *ngSwitchCase="'orange'" style="color: orange">I like a {{color}}</p>
+     <p *ngSwitchCase="'black'" style="color: black;">Black color</p>
+     <p *ngSwitchDefault>Unknow color</p>
 
+</div>
 
+<div [ngSwitch]="month">
+     <p *ngSwitchCase="'jan'" style="color: brown;">Jan</p>
+     <p *ngSwitchCase="'feb'" style="color: blueviolet;">feb</p>
+     <p *ngSwitchCase="'march'" style="color: burlywood;">march</p>
+     <p *ngSwitchCase="'april'" style="color: cadetblue;">april</p>
+     <p *ngSwitchCase="'may'" style="color: chartreuse;">may</p>
+     <p *ngSwitchCase="'june'" style="color: chocolate;">june</p>
+     <p *ngSwitchCase="'july'" style="color: tomato;">july</p>
+     <p *ngSwitchCase="'august'" style="color: yellowgreen;">august</p>
+     <p *ngSwitchCase="'september'" style="color: green;">september</p>
+     <p *ngSwitchCase="'octmber'" style="color: lightsalmon;">octmber</p>
+     <p *ngSwitchCase="'november'" style="color: darkgoldenrod;">november</p>
+     <p *ngSwitchCase="'december'" style="color: darkolivegreen;">december</p>
+     <p *ngSwitchDefault>unkown month</p>
+</div>

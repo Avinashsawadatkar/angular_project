@@ -33,6 +33,7 @@ studentData = ["Student","name","adress","age","dob",
 
 data=['name','age','name','age','name','age','name','age'];
 
-
+color="black";
+month="november";
 
 }
