@@ -24,4 +24,15 @@ visible(){
   this.visiible = !this.visiible;
 
 }
+
+listItem = ["Coffee","Tea","Sugar","Milk","Coffee","Tea","Sugar","Milk",
+"Coffee","Tea","Sugar","Milk",];
+
+studentData = ["Student","name","adress","age","dob",
+"Student","name","adress","age","dob",];
+
+data=['name','age','name','age','name','age','name','age'];
+
+
+
 }

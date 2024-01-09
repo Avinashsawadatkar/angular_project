@@ -30,6 +30,7 @@
 HTML element using the expression.
  You can also use ngStyle directive to dynamically change the style of your HTML element.</p>
 
+ <h2>*ngIf directive</h2>
 
 <div class="div-container" *ngIf="showDiv"></div>
 <br>
@@ -45,3 +46,68 @@ HTML element using the expression.
 <div class="toggle-container" *ngIf="visiible"></div>
 <br>
 <button (click)="visible()">Visible or hide</button>
+
+<h2>*ngFor Directive</h2>
+<ul>
+     <li>Coffee</li>
+     <li>Tea</li>
+     <li>Sugar</li>
+     <li>Milk</li>
+     <li>Coffee</li>
+     <li>Tea</li>
+     <li>Sugar</li>
+     <li>Milk</li>
+     <li>Coffee</li>
+     <li>Tea</li>
+     <li>Sugar</li>
+     <li>Milk</li>
+</ul>
+     <ul>
+          <li>
+               {{listItem}}
+          </li>
+     </ul>
+<ul>
+     <li *ngFor="let items of listItem">{{items}}</li>
+</ul>
+
+
+<ul>
+     <li>Student</li>
+     <li>name</li>
+     <li>adress</li>
+     <li>age</li>
+     <li>dob</li>
+     <li>Student</li>
+     <li>name</li>
+     <li>adress</li>
+     <li>age</li>
+     <li>dob</li>
+</ul>
+<ul>
+     <li>{{studentData}}</li>
+</ul>
+<ul>
+     <li *ngFor="let student of studentData">{{student}}</li>
+</ul>
+
+<ul>
+     <li>name</li>
+     <li>age</li>
+     <li>name</li>
+     <li>age</li>
+     <li>name</li>
+     <li>age</li>
+     <li>name</li>
+     <li>age</li>
+</ul>
+<ul>
+     <li>{{data}}</li>
+</ul>
+<ul>
+     <li *ngFor="let studntdata of data">{{studntdata}}</li>
+</ul>
+
+<h2>*switch directive</h2>
+
+
