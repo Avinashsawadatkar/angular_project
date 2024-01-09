@@ -19,4 +19,9 @@ effect(){
 
   this.show = !this.show;
 }
+visiible : boolean =true;
+visible(){
+  this.visiible = !this.visiible;
+
+}
 }
