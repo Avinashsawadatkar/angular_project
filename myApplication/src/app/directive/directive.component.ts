@@ -54,4 +54,8 @@ text2 : string = "I like a food";
     this.color2 ="purple";
     this.bgcolor2 ="lightgreen";
   }
+
+ journey:any ="user";
+
+ management:any ='presedent';
 }

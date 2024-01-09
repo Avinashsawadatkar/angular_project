@@ -30,7 +30,7 @@
 HTML element using the expression.
  You can also use ngStyle directive to dynamically change the style of your HTML element.</p>
 
- <h2>*ngIf directive</h2>
+<h2>*ngIf directive</h2>
 
 <div class="div-container" *ngIf="showDiv"></div>
 <br>
@@ -62,11 +62,11 @@ HTML element using the expression.
      <li>Sugar</li>
      <li>Milk</li>
 </ul>
-     <ul>
-          <li>
-               {{listItem}}
-          </li>
-     </ul>
+<ul>
+     <li>
+          {{listItem}}
+     </li>
+</ul>
 <ul>
      <li *ngFor="let items of listItem">{{items}}</li>
 </ul>
@@ -110,7 +110,7 @@ HTML element using the expression.
 
 <h2>*switch directive</h2>
 <div [ngSwitch]="color">
-     <p *ngSwitchCase="'pink'" style="color: pink;" >I like a {{color}}</p>
+     <p *ngSwitchCase="'pink'" style="color: pink;">I like a {{color}}</p>
      <p *ngSwitchCase="'green'" style="color: green;">I like a {{color}}</p>
      <p *ngSwitchCase="'yellow'" style="color: yellow;">I like a {{color}}</p>
      <p *ngSwitchCase="'skyblue'" style="color: skyblue;">I like a {{color}}</p>
@@ -143,14 +143,28 @@ HTML element using the expression.
 </ul>
 <h2>ngStyle</h2>
 
-<p [style.color]="color1"[style.backgroundColor]="bgcolor">{{text}}</p>
+<p [style.color]="color1" [style.backgroundColor]="bgcolor">{{text}}</p>
 
 <button (click)="updateColor()">update_color</button>
 <br><br>
 
 
-<h1 [style.color]="color2"[style.backgroundColor]="bgcolor2">{{text2}}</h1>
+<h1 [style.color]="color2" [style.backgroundColor]="bgcolor2">{{text2}}</h1>
 
 <button (click)="changeColor()">Change_color</button>
 
 <h2>ngclass directive</h2>
+<div class="div-container1">I like a mango</div>
+<br><br>
+
+<div [class.div-container2]="journey=='Admin'" 
+     [class.div-container1]="journey=='owner'"
+     [class.div-container]="journey=='user'">I like a sambhajinagar</div>
+
+<br><br>
+<div [class.one]="management=='director'"
+     [class.two]="management=='CEO'"
+     [class.three]="management=='presedent'"
+     [class.four]="management=='manager'"
+     [class.five]="management=='HOD'"
+     [class.six]="management=='engineer'">Time is Money!!!</div>
