@@ -30,3 +30,53 @@ button{
      cursor: pointer;
 
 }
+.div-container1{
+     background-color: black;
+     color: white;
+     height: 100px;
+     width: 100px;
+     border: 1px solid black;
+}
+.div-container2{
+     background-color: green;
+     height: 100px;
+     width: 100px;
+     border: 2px dotted black;
+}
+
+.one{
+     border: 1px double black;
+     height: 100px;
+     width: 100px;
+     background-color: yellow;
+}
+.two{
+     border: 1px solid black;
+     height: 100px;
+     width: 100px;
+     background-color: skyblue; 
+}
+.three{
+     border: 1px dotted black;
+     height: 100px;
+     width: 100px;
+     background-color: brown;
+}
+.four{
+     border: 1px dashed black;
+     height: 100px;
+     width: 100px;
+     background-color: lavender;
+}
+.five{
+     border: 1px groove  black;
+     height: 100px;
+     width: 100px;
+     background-color: rgb(0, 13, 255);
+}
+.six{
+     border: 1px ridge black;
+     height: 100px;
+     width: 100px;
+     background-color: darkred;
+}
