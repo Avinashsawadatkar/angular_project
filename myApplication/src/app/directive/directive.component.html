@@ -135,3 +135,22 @@ HTML element using the expression.
      <p *ngSwitchCase="'december'" style="color: darkolivegreen;">december</p>
      <p *ngSwitchDefault>unkown month</p>
 </div>
+
+<h2>Attribute</h2>
+<ul>
+     <li>ngStyle</li>
+     <li>ngClass</li>
+</ul>
+<h2>ngStyle</h2>
+
+<p [style.color]="color1"[style.backgroundColor]="bgcolor">{{text}}</p>
+
+<button (click)="updateColor()">update_color</button>
+<br><br>
+
+
+<h1 [style.color]="color2"[style.backgroundColor]="bgcolor2">{{text2}}</h1>
+
+<button (click)="changeColor()">Change_color</button>
+
+<h2>ngclass directive</h2>

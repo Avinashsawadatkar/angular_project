@@ -36,4 +36,22 @@ data=['name','age','name','age','name','age','name','age'];
 color="black";
 month="november";
 
+text : string ="style binding";
+color1 = "white";
+bgcolor = "black";
+
+updateColor(){
+this.color1 ="white";
+this.bgcolor = "blue";
+}
+
+
+text2 : string = "I like a food";
+  color2 = "grey";
+  bgcolor2 ="black";
+
+  changeColor(){
+    this.color2 ="purple";
+    this.bgcolor2 ="lightgreen";
+  }
 }
