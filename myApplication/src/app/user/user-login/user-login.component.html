@@ -1,13 +1,16 @@
-
 <div class="form-container">
      <h2>Login Form</h2>
-     <form>
+     <form #loginForm="ngForm">
           <label>UserName:</label><br>
-          <input type="text"><br>
+          <input type="text" #username="ngModel" ngModel name="username" required>
+          <div *ngIf="username?.errors?.['required'] && username?.touched" class="error-msg">Username is required.</div>
 
           <label>Password:</label><br>
-          <input type="password"><br>
+          <input type="text" #pass="ngModel" ngModel name="password" required>
+          <div *ngIf="pass.errors?.['required'] && pass?.touched" class="error-msg">Password is required</div>
+         
 
-          <button type="submit">Submit</button>
+          <button (click)="login(loginForm.value)" [disabled]="!loginForm.valid">Submit</button>
      </form>
 </div>
+
