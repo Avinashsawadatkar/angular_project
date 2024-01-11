@@ -1,4 +1,4 @@
-<div class="form-container">
+ <!-- <div class="form-container">
      <h2>Login Form</h2>
      <form #loginForm="ngForm">
           <label>UserName:</label><br>
@@ -12,5 +12,22 @@
 
           <button (click)="login(loginForm.value)" [disabled]="!loginForm.valid">Submit</button>
      </form>
-</div>
+</div>  -->
 
+
+
+
+<div class="div-form">
+     <h1>Registration Form</h1>
+     <form #rForm="ngForm">
+          <label>Email:</label>
+          <input type="text"  #email="ngModel" ngModel name="email" required> 
+          <div *ngIf="email?.errors?.['required'] && email?.touched" class="er-msg">This Field is required</div>
+          
+          <label>Password:</label>
+          <input type="password"  #password="ngModel" ngModel name="pass" required>
+          <div *ngIf="password.errors?.['required'] && password?.touched" class="er-msg">Password is menatory.</div>
+
+          <button (click)="regitrn(rForm.value)">Submit</button>
+     </form>
+</div>

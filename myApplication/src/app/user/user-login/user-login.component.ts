@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class UserLoginComponent {
 
-  login(data:any){
+  // login(data:any){
+  //   console.log(data);
+    
+  // }
+  regitrn(data:any){
     console.log(data);
     
   }
