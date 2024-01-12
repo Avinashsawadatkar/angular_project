@@ -21,12 +21,25 @@
      <h1>Registration Form</h1>
      <form #rForm="ngForm">
           <label>Email:</label>
-          <input type="text"  #email="ngModel" ngModel name="email" required> 
+
+          <input type="text"  #email="ngModel" ngModel name="email" required
+           pattern="[a-zA-Z]*$" minlength="2" maxlength="22"> 
           <div *ngIf="email?.errors?.['required'] && email?.touched" class="er-msg">This Field is required</div>
           
+          <div *ngIf="email?.errors?.['pattern'] && !email?.errors?.['minlength']" class="er-msg">Username must be Alphabets</div>
+
+          <div *ngIf="email?.errors?.['minlength']" class="er-msg">Minimum two character is required</div>
+
+        
+
           <label>Password:</label>
-          <input type="password"  #password="ngModel" ngModel name="pass" required>
+
+          <input type="text"  #password="ngModel" ngModel name="pass" required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$ ">
+
           <div *ngIf="password.errors?.['required'] && password?.touched" class="er-msg">Password is menatory.</div>
+
+          <div  *ngIf="password.errors?.['pattern']" class="er-msg">invalid password</div>
 
           <button (click)="regitrn(rForm.value)">Submit</button>
      </form>
