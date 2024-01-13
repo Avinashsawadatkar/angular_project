@@ -51,12 +51,12 @@ button:active{
 
 .div-form{
      border: 2px dotted blue;
-     height: 310px;
+     height: 360px;
      width: 350px;
      margin: auto;
      position: relative;
      top: 100px;
-     background-color: rgb(57, 21, 78);
+     background-color: rgb(197, 186, 204);
      color: white;
      text-align: center;
      border-radius: 20px;
