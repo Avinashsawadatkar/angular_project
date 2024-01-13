@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { TestComponent } from './test/test.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 console.log("app module calling......")
 
 
@@ -25,7 +26,8 @@ console.log("app module calling......")
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

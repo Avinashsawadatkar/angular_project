@@ -36,11 +36,12 @@
 
           <input type="text"  #password="ngModel" ngModel name="pass" required
           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$ ">
-
+         
           <div *ngIf="password.errors?.['required'] && password?.touched" class="er-msg">Password is menatory.</div>
 
           <div  *ngIf="password.errors?.['pattern']" class="er-msg">invalid password</div>
 
           <button (click)="regitrn(rForm.value)">Submit</button>
      </form>
+    
 </div>
